@@ -15,6 +15,14 @@
 		};
 	});
 
+	app.controller('blurbController', ['$http', function($http){
+		splash = this;
+
+		$http.get('./updates.json').success(function(data){
+			splash.blurbs = updates;
+		});
+	}]);
+
 	var pengys = [
 		{
 			name: "1",
