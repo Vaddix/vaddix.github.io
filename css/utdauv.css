@@ -1,0 +1,7 @@
+.blurbLeft {
+    background: repeating-radial-gradient(circle at center center, #008094 0,#00bfff 8%,#008094 12%);
+}
+
+.blurbRight {
+    background: repeating-radial-gradient(circle at center center, #948000 0,#ffbf00 8%,#948000 12%);
+}
