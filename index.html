@@ -24,28 +24,50 @@
 		<h1 align="justify">Mawaru Penguindrum</h1>
 		<section class="container emphasisBlurb" ng-controller="blurbController as blurber">
 			<div class="row emphasisBlurb blurbRow">
-				<div class="col-6-sm blurbLeft">
-					<div class="blurbLeftPT1">
-						<b>Meeting Times</b>
-							<p>Meeting Times are as follows: Wednesday at 8PM in <a href="#mapToSPN">SPN</a></p>
+				<a href=# class="blurbLeftAnchor">
+					<!--The Meeting Times list and the In Production list will be populated by a JSON array-->
+					<div class="col-6-sm blurbLeft">
+						<div class="blurbLeftPT1">
+							<b>Meeting Times</b>
+								<p>Meeting Times are as follows in<a href="#mapToSPN"> SPN </a>unless otherwise noted</p>
+								<br>
+									<ul>
+										<b>Wednesday, August 17, 2016 at 8PM</b>
+										<b>Wednesday, August 24, 2016 at 8PM</b>
+										<b>Friday, August 26, 2016 at 10AM</b>
+										<b>Saturday, August 27, 2016 at 10AM</b>
+									</ul> 
+						</div>
+						<div class="blurbLeftPT2">
+							<b>In Production</b>
+								<p>Here's a short list of what we're currently working on:</p>
+								<br>
+								<p>Website Design:</p>
+								<br>
+									<ol>
+										<b>Blurb Buttons</b>
+										<b>Teams/Activities Sliders</b>
+										<b>Sponsors/Thanks Section</b>
+										<b>Contact Info and Disclaimer</b>
+									</ol>
+						</div>
+						<b>{{blurber.titleLeft}}</b>
 					</div>
-					<div class="blurbLeftPT2">
-						<b>In Production</b>
-							<p>Here's a short list of what we're currently working on:</p>
+				</a>
+				<a href=# class="blurbRightAnchor">
+					<!--The emails and names will be populated with a JSON array-->
+					<div class="col-6-sm blurbRight">
+						<div class="blurbRightPT1">
+							<b>Getting Involved:</b>
+								<p>Please contact Abhinav Chennapareddy for details on the application procedure.</p>
+						</div>
+						<div class="blurbRightPT2">
+							<b>Sponsor UTD Robosub</b>
+								<p>Please contact Nicholas Gans for details on contributing to UTD AUV as a sponsor.</p>
+						</div>
+						<b>{{blurber.titleRight}}</b>
 					</div>
-					<b>{{blurber.titleLeft}}</b>
-				</div>
-				<div class="col-6-sm blurbRight">
-					<div class="blurbRightPT1">
-						<b>Getting Involved:</b>
-							<p>Please contact Abhinav Chennapareddy for details on the application procedure.</p>
-					</div>
-					<div class="blurbRightPT2">
-						<b>Sponsor UTD Robosub</b>
-							<p>Please contact Nicholas Gans for details on contributing to UTD AUV as a sponsor.</p>
-					</div>
-					<b>{{blurber.titleRight}}</b>
-				</div>
+				</a>
 			</div>
 		</section>
 

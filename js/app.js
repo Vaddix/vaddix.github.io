@@ -17,9 +17,14 @@
 
 	app.controller('blurbController', ['$http', function($http){
 		splash = this;
+		titleLeft = "Take Action!";
+		titleRight = "Get Involved!";
 
 		$http.get('./updates.json').success(function(data){
 			splash.blurbs = updates;
+		});
+		$http.get('./contacts.json').success(function (data) {
+			splash.contacts = contacts;
 		});
 	}]);
 
