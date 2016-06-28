@@ -8,7 +8,8 @@
 		<title>The Destination of Your Fate</title>
 
 		<!-- Bootstrap -->
-		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"></link>
+		<link type="text/css" href="css/utdauv.css" rel="stylesheet"/>
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 
@@ -21,6 +22,63 @@
 	</head>
 	<body ng-controller="pinguController as pingu">
 		<h1 align="justify">Mawaru Penguindrum</h1>
+		<section class="container emphasisBlurb" ng-controller="blurbController as blurber">
+			<div class="row emphasisBlurb blurbRow">
+				<!--The Meeting Times list and the In Production list will be populated by a JSON array-->
+				<div class="col-sm-6" >
+					<div class="blurbLeft">
+						<a class="blurbLeftAnchor" href="#">
+							<span class="blurbLeftPT1">
+								<b>Meeting Times</b>
+									<p>Meeting Times are as follows in SPN unless otherwise noted</p>
+									<br>
+										<ul>
+											<li><b>Wednesday, August 17, 2016 at 8PM</b></li>
+											<li><b>Wednesday, August 24, 2016 at 8PM</b></li>
+											<li><b>Friday, August 26, 2016 at 10AM</b></li>
+											<li><b>Saturday, August 27, 2016 at 10AM</b></li>
+										</ul> 
+							</span>
+						</a>
+						<a class="blurbRightAnchor" href="#">
+							<span class="blurbLeftPT2">
+								<b>In Production</b>
+									<p>Here's a short list of what we're currently working on:</p>
+									<br>
+									<p>Website Design:</p>
+									<br>
+										<ol>
+											<li><b>Blurb Buttons</b></li>
+											<li><b>Teams/Activities Sliders</b></li>
+											<li><b>Sponsors/Thanks Section</b></li>
+											<li><b>Contact Info and Disclaimer</b></li>
+										</ol>
+							</span>
+						</a>
+					</div><!--/blurbLeft-->
+					<h3 class="blurbLeftTitle">{{blurber.titleLeft}}</h3>
+				</div>
+				<!--The emails and names will be populated with a JSON array-->
+				<div class="col-sm-6">
+					<div class="blurbRight">
+						<a class="blurbLeftAnchor" href="#">
+							<div class="blurbRightPT1">
+								<b>Getting Involved:</b>
+									<p>Please contact Abhinav Chennapareddy for details on the application procedure.</p>
+							</div>
+						</a>
+						<a class="blurbRightAnchor" href="#">
+							<div class="blurbRightPT2">
+								<b>Sponsor UTD Robosub</b>
+									<p>Please contact Nicholas Gans for details on contributing to UTD AUV as a sponsor.</p>
+							</div>
+						</a>
+					</div>
+					<h3 class="blurbRightTitle">{{blurber.titleRight}}</h3>
+				</div><!--/blurbRight-->
+			</div>
+		</section>
+
 		<section class="container" ng-controller="tabController as tabCont">
 			<ul class="nav nav-pills">
 				<li ng-class="{active:tabCont.isTab(1)}">

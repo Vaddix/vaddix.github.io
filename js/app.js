@@ -15,6 +15,19 @@
 		};
 	});
 
+	app.controller('blurbController', ['$http', function($http){
+		splash = this;
+		this.titleLeft = "Take Action!";
+		this.titleRight = "Get Involved!";
+
+		$http.get('./updates.json').success(function(data){
+			splash.blurbs = updates;
+		});
+		$http.get('./contacts.json').success(function (data) {
+			splash.contacts = contacts;
+		});
+	}]);
+
 	var pengys = [
 		{
 			name: "1",
