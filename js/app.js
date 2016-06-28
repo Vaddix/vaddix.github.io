@@ -17,8 +17,8 @@
 
 	app.controller('blurbController', ['$http', function($http){
 		splash = this;
-		titleLeft = "Take Action!";
-		titleRight = "Get Involved!";
+		this.titleLeft = "Take Action!";
+		this.titleRight = "Get Involved!";
 
 		$http.get('./updates.json').success(function(data){
 			splash.blurbs = updates;

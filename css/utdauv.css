@@ -1,7 +1,96 @@
+/********************* Emphasized Blurbs Section *******************/
+/***  This section governs the style of the emphasized "updates" ***/
+/***            section at the top of the webpage                ***/
+/*******************************************************************/
+
+ /*To be done:
+        - Set up backgrounds to work using ng-img so orgs can more easily
+            swap in their own designs for the buttons
+*/
+
+.blurbRow {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .blurbLeft {
-    background: repeating-radial-gradient(circle at center center, #008094 0,#00bfff 8%,#008094 12%);
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0 0 .9375em rgba(0,0,0,.3),0 0 1.125em rgba(0,0,0,.3);
+    perspective: 200px;
 }
 
 .blurbRight {
-    background: repeating-radial-gradient(circle at center center, #948000 0,#ffbf00 8%,#948000 12%);
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0 0 .9375em rgba(0,0,0,.3),0 0 1.125em rgba(0,0,0,.3);
+    perspective: 200px;
+}
+
+.blurbLeftAnchor {
+    text-decoration: none;
+    color: black;
+    display: block;
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.blurbRightAnchor {
+    text-decoration: none;
+    color: black;
+    display: block;
+    position: relative;
+    float: right;
+    width: 50%;
+}
+
+.blurbLeftPT1 {
+    padding: 2em;
+    background: repeating-radial-gradient(circle at right center, #008094 0,#00bfff 8%,#008094 12%);
+    position: relative;
+    text-decoration: none;
+    display: block;
+}
+
+.blurbLeftPT2 {
+    padding: 2em;
+    background: repeating-radial-gradient(circle at left center, #948000 0,#ffbf00 8%,#948000 12%);
+    position: relative;
+    text-decoration: none;
+    display: block;
+    height: 316px;
+}
+
+.blurbRightPT1 {
+    padding: 2em;
+    background: repeating-radial-gradient(circle at right center, #948000 0,#ffbf00 8%,#948000 12%);
+    position: relative;
+    text-decoration: none;
+    display: block;
+}
+
+.blurbRightPT2 {
+    padding: 2em;
+    background: repeating-radial-gradient(circle at left center, #008094 0,#00bfff 8%,#008094 12%);
+    position: relative;
+    text-decoration: none;
+    display: block;
+}
+
+.blurbLeftTitle {
+    text-align: center;
+    clear: both;
+    box-shadow: 0 0 .9375em rgba(0,0,0,.3),0 0 1.125em rgba(0,0,0,.3);
+    perspective: 200px;    
+}
+
+
+.blurbRightTitle {
+    text-align: center;
+    clear: both;
+    box-shadow: 0 0 .9375em rgba(0,0,0,.3),0 0 1.125em rgba(0,0,0,.3);
+    perspective: 200px;
 }
