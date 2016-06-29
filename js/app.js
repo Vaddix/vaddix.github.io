@@ -33,24 +33,24 @@
 			name: "1",
 			description: "This pengy wears the mask of the playboy. Hiding the memory of all he has given up, he suppresses his true desires and dedicates himself to protecting his 'family'.",
 			images: [
-				"../images/pengy1.jpg",
-				"../images/pengy1.png"
+				"images/pengy1.jpg",
+				"images/pengy1.png"
 			]
 		},
 		{
 			name: "2",
 			description: "This pengy wears the mask of the nice guy. Hiding the memory of all his past regrets, he suppresses his fear and anger and dedicates himself to maintaining  his 'family'.",
 			images: [
-				"../images/pengy2.jpg",
-				"../images/pengy2.png"
+				"images/pengy2.jpg",
+				"images/pengy2.png"
 			]
 		},
 		{
 			name: "3",
 			description: "This pengy wears the mask of the happy cripple. Hiding the memory of all that has been taken from her, she suppresses her sadness and dedicates herself to supporting her 'family'.",
 			images: [
-				"../images/pengy3.jpg",
-				"../images/pengy3.png"
+				"images/pengy3.jpg",
+				"images/pengy3.png"
 			]
 		}
 	];
