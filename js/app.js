@@ -1,8 +1,9 @@
-(function () {
+(function () {	
 	var app = angular.module('penguindrum', []);
 
 	app.controller('pinguController', function(){
 		this.family = pengys;
+		this.imgNum = Math.floor(Math.random()*2);
 	});
 
 	app.controller('tabController', function(){
